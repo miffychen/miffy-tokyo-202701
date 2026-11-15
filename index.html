@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2027 日本雪國小旅行 1/17–1/23</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<style>
+:root{--bg:#FFFCF6;--ink:#3E3A39;--co:#F2A497;--ye:#F6D27A;--wa:#A8D3E6;--gr:#B9DAA5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Huninn','PingFang TC','Noto Sans TC',sans-serif;line-height:1.7;padding-top:56px}
+nav{position:fixed;top:0;left:0;right:0;z-index:9;background:var(--bg);border-bottom:3px solid var(--ink);padding:calc(8px + env(safe-area-inset-top,0px)) 10px 8px;display:flex;gap:6px;justify-content:center}
+nav{gap:4px!important}nav a{color:var(--ink);text-decoration:none;font-size:13px;padding:3px 8px;border:3px solid var(--ink);border-radius:99px}
+nav a:nth-child(1){background:var(--co)}nav a:nth-child(2){background:var(--wa)}nav a:nth-child(3){background:var(--ye)}nav a:nth-child(4){background:var(--gr)}nav a:nth-child(5){background:var(--wa)}nav a:nth-child(6){background:#fff}
+main{max-width:560px;margin:0 auto;padding:14px 14px 40px}section{margin-top:28px}
+h2{font-size:22px;margin:0 0 12px;display:inline-block;background:var(--ye);border:3px solid var(--ink);border-radius:99px;padding:0 16px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:24px;padding:14px 16px;margin-bottom:12px}
+.hero{background:var(--wa);border:3px solid var(--ink);border-radius:32px;overflow:hidden;text-align:center;padding-bottom:14px}
+.hero svg{display:block;width:100%;height:auto}.hero h1{margin:6px 12px 2px;font-size:28px}.hero p{margin:0;font-size:14px}
+.cd{display:flex;gap:8px;justify-content:center;margin:12px 10px 0}
+.cd div{background:var(--bg);border:3px solid var(--ink);border-radius:18px;padding:2px 10px;min-width:64px}
+.cd b{display:block;font-size:26px;line-height:1.2}.cd span{font-size:12px}
+.fl{display:flex;justify-content:space-between;align-items:center;text-align:center}
+.fl b{font-size:30px;display:block;line-height:1.1}.fl small{font-size:12px}
+.fl .mid{flex:1;font-size:12px;border-bottom:3px dashed var(--ink);margin:0 10px 14px;padding-bottom:2px}
+.lab{display:inline-block;background:var(--co);border:3px solid var(--ink);border-radius:99px;padding:0 10px;font-size:13px;margin-bottom:6px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px}
+.tabs button{flex:0 0 auto;font:inherit;color:var(--ink);background:#fff;border:3px solid var(--ink);border-radius:20px;padding:2px 12px;text-align:center;cursor:pointer;line-height:1.3}
+.tabs button small{display:block;font-size:11px}.tabs button.on{background:var(--ye);transform:translateY(-3px)}
+.sum{background:var(--gr);border:3px solid var(--ink);border-radius:20px;padding:6px 14px;margin-bottom:14px;font-size:14px}
+#tl{position:relative;padding-left:22px}
+#tl:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;border-left:3px dashed var(--ink)}
+.it{position:relative;margin-bottom:12px}
+.it:before{content:"";position:absolute;left:-23px;top:14px;width:14px;height:14px;border-radius:50%;background:var(--co);border:3px solid var(--ink)}
+.tm{font-size:13px;opacity:.8}.it h3{margin:0;font-size:17px}.it p{margin:2px 0 0;font-size:14px}
+.tag{display:inline-block;border:3px solid var(--ink);border-radius:99px;padding:0 9px;font-size:12px;margin:0 4px 2px 0;line-height:1.5}
+.air{background:var(--wa)}.stay{background:var(--gr)}.fun{background:var(--ye)}.pay{background:var(--co)}.st-ok{background:#fff}.st-w{background:#FFF6D9}.st-r{background:var(--co);transform:rotate(-3deg)}
+.cost{display:inline-block;margin:6px 0 2px;background:var(--ye);border:3px solid var(--ink);border-radius:16px;padding:0 12px;font-size:14px}
+.lk{display:inline-block;margin:6px 6px 0 0;color:var(--ink);background:var(--wa);border:3px solid var(--ink);border-radius:99px;padding:0 12px;font-size:13px;text-decoration:none}
+.row{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:2px dotted var(--ink);font-size:14px}.row:last-of-type{border:0}.row b{white-space:nowrap}.sm{font-size:12px;margin:6px 0 0}
+.pop{animation:pop .5s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{0%{transform:scale(.88) translateY(14px);opacity:0}100%{transform:none;opacity:1}}
+.todo label{display:flex;gap:10px;align-items:flex-start;padding:7px 0;cursor:pointer;font-size:15px;border-bottom:2px dotted var(--ink)}
+.todo label:last-child{border:0}
+.todo input{appearance:none;width:26px;height:26px;border:3px solid var(--ink);border-radius:9px;background:#fff;flex:0 0 auto;margin:0;margin-top:2px}
+.todo input:checked{background:var(--gr)}.todo input:checked:after{content:"✓";display:block;text-align:center;line-height:20px;font-weight:bold}
+.todo input:checked+span{text-decoration:line-through;opacity:.55}.todo small{display:block;font-size:12px;opacity:.8}
+.hotel h3{margin:0 0 4px}.hotel p{margin:2px 0;font-size:14px}
+footer{text-align:center;font-size:13px;margin-top:30px}
+.sn circle{animation:fall 7s linear infinite}.sn circle:nth-child(2n){animation-duration:9s;animation-delay:-3s}.sn circle:nth-child(3n){animation-duration:11s;animation-delay:-6s}
+.pl{animation:fly 14s linear infinite}.sun{animation:spin 20s linear infinite;transform-origin:60px 40px}.tr{animation:rail 9s linear infinite}.cl{animation:dr 18s linear infinite alternate}
+@keyframes fall{from{transform:translateY(-10px)}to{transform:translateY(190px)}}
+@keyframes dr{to{transform:translateX(40px)}}@keyframes fly{from{transform:translate(-80px,10px)}to{transform:translate(440px,-14px)}}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes rail{from{transform:translateX(-120px)}to{transform:translateX(450px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style></head><body>
+<nav><a href="#top">首頁</a><a href="#fl">航班</a><a href="#plan">行程</a><a href="#go">交通</a><a href="#stay">住宿</a><a href="#todo">待辦</a></nav>
+<main id="top">
+<div class="hero">
+<svg viewBox="0 0 360 210" role="img" aria-label="雪山、新幹線與飛機插圖" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g class="sun"><circle cx="60" cy="40" r="20" fill="#F6D27A"/><path d="M60 8v8M60 64v8M28 40h8M84 40h8" fill="none"/></g>
+<g class="cl"><path d="M150 50q0-12 12-12 6-10 18-5 12 0 14 10 8 2 6 10h-44q-6-1-6-3z" fill="#fff"/></g>
+<g class="pl"><path d="M0 30q14-12 36-10l18-12 8 2-8 12 14 2-4 8H20z" fill="#FFFCF6"/><circle cx="26" cy="28" r="3" fill="#A8D3E6"/><circle cx="38" cy="28" r="3" fill="#A8D3E6"/></g>
+<path d="M-10 160L90 70l60 60 50-70 90 80 80-40v120H-10z" fill="#FFFCF6"/><path d="M62 98l28-28 20 20-10 6-10-8-10 8zM176 84l24-24 28 24-14 6-10-8-10 8z" fill="#fff" stroke="none"/>
+<path d="M-10 160L90 70l60 60 50-70 90 80 80-40" fill="none"/>
+<path d="M-10 176q80-24 160-8t210-12v54H-10z" fill="#B9DAA5"/>
+<g fill="#B9DAA5"><path d="M30 178l14-34 14 34z"/><path d="M52 180l12-28 12 28z"/><path d="M300 178l14-34 14 34z"/></g>
+<g fill="#F2A497"><rect x="238" y="148" width="40" height="30" rx="6"/></g><path d="M230 150l28-22 28 22z" fill="#F6D27A"/><rect x="252" y="160" width="12" height="18" fill="#FFFCF6"/>
+<path d="M0 190h360v20H0z" fill="#fff"/>
+<g class="tr"><path d="M0 178h76q16 0 20 12v6H0z" fill="#fff"/><path d="M0 188h96" stroke="#F2A497"/><rect x="8" y="181" width="12" height="6" rx="2" fill="#A8D3E6"/><rect x="26" y="181" width="12" height="6" rx="2" fill="#A8D3E6"/><rect x="44" y="181" width="12" height="6" rx="2" fill="#A8D3E6"/></g>
+<g class="sn" fill="#fff" stroke="none"><circle cx="20" cy="0" r="3"/><circle cx="70" cy="-20" r="2.5"/><circle cx="120" cy="-5" r="3"/><circle cx="170" cy="-30" r="2"/><circle cx="215" cy="-10" r="3"/><circle cx="265" cy="-25" r="2.5"/><circle cx="310" cy="0" r="3"/><circle cx="340" cy="-35" r="2"/></g>
+</svg>
+<h1>2027 日本雪國小旅行</h1><p>1/17（日）– 1/23（六）｜苗場・越後湯澤・輕井澤・東京</p>
+<div class="cd" id="cd" aria-live="polite"></div></div>
+
+<section id="fl"><h2>✈ 航班</h2>
+<div class="card"><span class="lab">去程 1/17（日）</span>
+<div class="fl"><div><b>07:55</b><small>桃園 T2</small></div><div class="mid">長榮 BR184</div><div><b>12:00</b><small>成田 T1（日本）</small></div></div>
+<p style="margin:8px 0 0;font-size:13px">V 艙・託運 1 件・飛行 3:05・訂位 OK</p></div>
+<div class="card"><span class="lab" style="background:var(--wa)">回程 1/23（六）</span>
+<div class="fl"><div><b>14:00</b><small>成田 T1（日本）</small></div><div class="mid">長榮 BR197</div><div><b>17:05</b><small>桃園 T2</small></div></div>
+<p style="margin:8px 0 0;font-size:13px">W 艙・託運 1 件・飛行 4:05・訂位 OK。要提前安排前往成田機場</p></div><div class="cost">💰 來回機票約 NT$17,000（Google 參考）</div></section>
+
+<section id="plan"><h2>🗓 每日行程</h2>
+<div class="tabs" id="tabs"></div><div class="sum" id="sum"></div><div id="tl"></div></section>
+
+<section id="go"><h2>🚄 交通費用參考</h2>
+<div class="card"><span class="lab" style="background:var(--ye)">票價（日圓）</span>
+<div class="row"><span>成田 → 東京<br>成田特快（全程指定席）</span><b>¥3,140</b></div>
+<div class="row"><span>成田 → 上野<br>Skyliner（全程指定席）</span><b>¥2,580</b></div>
+<div class="row"><span>東京 → 湯澤<br>新幹線約 90 分</span><b>¥6,800／7,330</b></div>
+<div class="row"><span>上野 → 湯澤<br>新幹線約 80 分</span><b>¥6,200／7,100</b></div>
+<div class="row"><span>湯澤 → 高崎 → 輕井澤<br>新幹線約 75 分</span><b>¥6,050</b></div>
+<div class="row"><span>輕井澤 → 上野<br>新幹線約 50 分</span><b>¥5,390／5,920</b></div>
+<div class="row"><span>輕井澤 → 東京<br>新幹線約 60 分</span><b>¥5,490／6,020</b></div>
+<p class="sm">資料為 Google 參考，斜線前後應為自由席／指定席，購票時再確認。</p></div>
+<div class="card"><span class="lab" style="background:var(--wa)">1/17 成田 → 湯澤 → 苗場</span>
+<p class="row" style="display:block"><b>路線一</b>：成田特快到東京站（約 60 分），轉上越新幹線（約 75 分），預估 16:30 抵達越後湯澤。</p>
+<p class="row" style="display:block"><b>路線二</b>：Skyliner 到上野（約 50 分），轉上越新幹線，預估 16:45 抵達越後湯澤。</p>
+<p class="sm">預估以 12:25 抵達成田計算，入境與領行李抓到 13:45 前。總表寫 12:00，請以航班實際時間為準。</p>
+<p style="margin:8px 0 0;font-size:14px"><b>湯澤 → 苗場</b>：住客專用免費接駁巴士，從越後湯澤站東口出發，約 40 分，需預約。1/17 可搭 17:10（抵 17:50）或 19:00（抵 19:40）。16:45 到站要趕 17:10 會很趕，建議把 19:00 當備案。</p>
+<div class="cost">💰 接駁巴士免費</div>
+<p class="sm">預約開放為搭乘前 1 個月到 2 天前（約 12/17 起），要用訂房代表人姓名。營運期間 2026/12/12–2027/4/4，滿座可能搭不到。</p>
+<a class="lk" href="https://www.princehotels.com/naeba/zh-hant/?p=18766" target="_blank" rel="noopener">🔗 接駁巴士時刻與預約</a></div>
+<div class="card"><span class="lab" style="background:var(--gr)">後續移動</span>
+<p style="margin:4px 0;font-size:14px"><b>1/19 苗場 → 湯澤</b>：苗場出發 10:15、11:15、12:15、14:15、15:15、16:15（約 40 分抵達）。湯澤 16:30 才能入住，搭 12:15 或 14:15 較從容。</p>
+<p style="margin:4px 0;font-size:14px"><b>1/20 湯澤 → 輕井澤</b>：新幹線經高崎轉乘，約 75 分，¥6,050。</p>
+<p style="margin:4px 0;font-size:14px"><b>1/21 輕井澤 → 上野</b>：新幹線約 50 分，¥5,390／5,920，離上野御徒町飯店很近。</p>
+<p style="margin:4px 0;font-size:14px"><b>1/23 上野 → 成田</b>：Skyliner ¥2,580，14:00 起飛，出發時間出發前再查。</p>
+<p class="sm">成田到苗場的直達巴士 2026 年只開 2/1–3/31，2027 年是否營運請查官網。</p>
+<a class="lk" href="https://www.princehotels.com/naeba/zh-hant/map-direction/2/" target="_blank" rel="noopener">🔗 苗場交通官網</a></div></section>
+<section id="eat"><h2>🍜 湯澤美食</h2><div class="card">
+<div class="row"><span>鮮肴屋 BENICHO<br>湯澤町湯澤 318-14</span><a class="lk" style="margin:0" href="https://www.google.com/maps/search/?api=1&query=鮮肴屋BENICHO+湯澤町湯澤318-14" target="_blank" rel="noopener">地圖</a></div>
+<div class="row"><span>茶屋 森瀧<br>湯澤町湯澤 357-5</span><a class="lk" style="margin:0" href="https://www.google.com/maps/search/?api=1&query=茶屋森瀧+湯澤町湯澤357-5" target="_blank" rel="noopener">地圖</a></div>
+<div class="row"><span>越後湯澤炸豬排 人參亭<br>湯澤町湯澤 497-4</span><a class="lk" style="margin:0" href="https://www.google.com/maps/search/?api=1&query=人參亭+湯澤町湯澤497-4" target="_blank" rel="noopener">地圖</a></div>
+<div class="row"><span>Alpina<br>湯澤町湯澤 3265-1</span><a class="lk" style="margin:0" href="https://www.google.com/maps/search/?api=1&query=Alpina+湯澤町湯澤3265-1" target="_blank" rel="noopener">地圖</a></div>
+<p class="sm">地址皆在新潟縣南魚沼郡。營業時間與公休日出發前先查。</p></div></section>
+<section id="suki"><h2>🥩 東京壽喜燒</h2>
+<div class="card hotel"><span class="lab" style="background:var(--co)">候選 1｜銀座</span><h3>山笑ふ 銀座店 Yamawarau</h3>
+<p>📍 3-8-4 Ginza，銀座站步行約 6 分</p>
+<p>🕒 06:30–10:00、11:00–15:00、17:00–22:00</p>
+<p>部落客點的「梅 黑毛すき焼き」午餐套餐，山形黑毛和牛、一人一锅，附米飯、麵條和甜品。午餐有中文菜單，實際為日文為主溝通。</p>
+<div class="cost">💰 平均每人 ¥3,000–4,000</div>
+<p class="sm">作者沒訂位、現場候位了一陣子，建議先訂位。</p>
+<a class="lk" href="https://www.tablecheck.com/shops/yama-warau-ginza/reserve" target="_blank" rel="noopener">🔗 官網訂位</a><a class="lk" href="https://maps.app.goo.gl/aty9EeeWxFzxvoBo8" target="_blank" rel="noopener">🔗 地圖</a><a class="lk" href="https://aileelife.com/shabushabuyamawarau/" target="_blank" rel="noopener">🔗 實吃心得</a></div>
+<div class="card"><span class="lab" style="background:var(--ye)">候選 2｜FUN! JAPAN 5 選</span>
+<div class="row"><span>涂涂鍋 但馬屋<br>東京站八重洲地下街、淺草</span><b>¥3,880 起</b></div>
+<div class="row"><span>Mo-Mo-Paradise<br>新宿、澄谷、淺草（可選壽喜燒湯底）</span><b>¥4,180 起</b></div>
+<div class="row"><span>Shabu禪<br>四谷（涮涮鍋或壽喜燒）</span><b>¥5,720 起</b></div>
+<div class="row"><span>京都湯涮 CHIRIRI<br>品川、銀座京橋</span><b>¥7,800 起</b></div>
+<div class="row"><span>壽司・涮涮鍋 Yuzuan<br>新宿西口、秋葉原</span><b>¥3,278 起</b></div>
+<p class="sm">這 5 家都是吃到飽或套餐，有些主打涮涮鍋。價格為 2024–2025 年文章資訊，請以官網為準。</p>
+<a class="lk" href="https://www.fun-japan.jp/tw/articlesPromotion/13651" target="_blank" rel="noopener">🔗 完整介紹文章</a></div></section>
+<section id="stay"><h2>🏨 住宿</h2><div id="hs"></div></section>
+<section id="todo"><h2>✅ 待辦與提醒</h2><div class="card todo" id="td"></div></section>
+<footer>❄ 滑雪愉快，泡湯暖暖 ❄</footer></main>
+<script>
+const TY={'航班':'air','住宿':'stay','旅遊':'fun','付款':'pay'},SS={'已確認':'st-ok','待規劃':'st-w','待確認':'st-w','注意':'st-r'};
+// [時間,標題,類型,地點／交通,狀態,備註]
+const D=[
+{d:'1/17',w:'日',s:'桃園 → 成田 → 苗場',i:[
+['07:55 臺灣／12:00 日本','長榮 BR184','航班','桃園 T2 → 成田 T1','已確認','託運 1 件；V 艙；機場到苗場的參考路線見「交通」'],
+['時間待確認','苗場王子大飯店入住','住宿','Naeba Prince Hotel','已確認','住至 1/19；雙床河景禁菸；含早餐']]},
+{d:'1/18',w:'一',s:'苗場',i:[
+['自由安排','苗場滑雪／自由活動','旅遊','苗場','待規劃','尚無活動預訂資料'],
+['當日確認','確認輕井澤、東京飯店扣款','付款','線上訂單','待確認','兩筆訂單預計 1/18 完成付款；避免重複付款']]},
+{d:'1/19',w:'二',s:'苗場 → 越後湯澤',i:[
+['16:30 入住','湯澤 Grand Hotel','住宿','湯沢グランドホテル','已確認','退房苗場飯店；湯澤住 1 晚，僅含早餐，不含晚餐']]},
+{d:'1/20',w:'三',s:'湯澤 → 輕井澤',i:[
+['15:00 入住','APA 輕井澤站前輕井澤莊','住宿','輕井澤站附近','已確認','湯澤退房；交通待安排']]},
+{d:'1/21',w:'四',s:'輕井澤 → 東京上野',i:[
+['15:00 入住','Tosei Hotel Cocone 上野御徒町','住宿','3-23-9 Ueno, Tokyo','已確認','輕井澤退房；東京住 2 晚']]},
+{d:'1/22',w:'五',s:'東京',i:[
+['自由安排','東京自由活動','旅遊','東京','待規劃','景點、購物待安排；壽喜燒候選見「東京壽喜燒」']]},
+{d:'1/23',w:'六',s:'東京 → 成田 → 桃園',i:[
+['14:00 日本／17:05 臺灣','長榮 BR197','航班','成田 T1 → 桃園 T2','已確認','東京飯店退房；提前安排前往成田機場；託運 1 件']]}];
+const H=[
+['1/17 – 1/19・2 晚','var(--co)','苗場王子大飯店 Naeba Prince Hotel','43802SG178558','4 號館 Twin B 河景・禁菸・2 位成人・含早餐・4 號館入住 15:00／退房 10:00（樂天旅遊方案頁資訊，請以訂單為準）','$16,170.78（幣別待確認）',[['飯店官網','https://www.princehotels.com/naeba/zh-hant/'],['飯店照片','https://www.princehotels.com/naeba/photogallery/']]],
+['1/19 – 1/20・1 晚','var(--ye)','湯澤 Grand Hotel 湯沢グランドホテル','X-ATG528GONTY','16:30 入住・和洋式・2 成人・僅含早餐（不含晚餐）','房費 ¥65,450 已預付，溫泉稅 ¥300 現場付，總計 ¥65,750',[['飯店官網','https://yuzawagrandhotel.jp/']]],
+['1/20 – 1/21・1 晚','var(--wa)','APA 輕井澤站前輕井澤莊','1733826674','15:00 入住・外部房型 8UA05YUY・免費取消至 1/19 23:59（日本時間）','金額未提供，預計 1/18 付款',[['飯店官網','https://www.apahotel.com/hotel/koshinetsu/nagano/karuizawa-ekimae/']]],
+['1/21 – 1/23・2 晚','var(--gr)','Tosei Hotel Cocone 上野御徒町','1733849681','15:00 入住・外部房型 8UAO673M・免費取消至 1/19 23:59（日本時間）','金額未提供，預計 1/18 付款',[['飯店官網','https://tosei-hotel.co.jp/'],['飯店列表','https://tosei-hotel.co.jp/hotellist/']]]];
+const TD=[['1/18','確認 APA 輕井澤飯店付款','高','訂單 1733826674；核對扣款，勿重複付款'],['1/18','確認 Tosei 上野御徒町飯店付款','高','訂單 1733849681；核對扣款，勿重複付款'],['1/19 23:59','兩間新飯店免費取消期限','高','皆為日本當地時間 1/19 23:59'],['出發前','確認苗場王子住宿費幣別','中','訂單顯示 $16,170.78，未標示貨幣'],['出發前','確認各飯店退房時間','中','不要以暫定時間作正式依據'],['出發前','安排成田 → 苗場交通','高','1/17 12:00 抵達成田'],['出發前','安排苗場 → 湯澤 → 輕井澤 → 東京交通','高','跨區移動及行李運送'],['1/19','湯澤 Grand Hotel 溫泉稅','中','¥300，房費 ¥65,450 已預付'],['1/23','東京 → 成田機場交通','高','BR197 14:00 成田 T1 起飛；住上野，Skyliner 約 ¥2,580'],['12/17 起','預約越後湯澤站 → 苗場免費接駁巴士','高','開放預約為搭乘前 1 個月到 2 天前；用訂房代表人姓名']];
+const tabs=document.getElementById('tabs'),tl=document.getElementById('tl'),sum=document.getElementById('sum');
+function show(n){[...tabs.children].forEach((b,i)=>b.classList.toggle('on',i==n));sum.textContent=D[n].s;
+tl.innerHTML=D[n].i.map(x=>`<div class="it"><div class="card"><div class="tm">${x[0]}</div><h3>${x[1]}</h3><div><span class="tag ${TY[x[2]]}">${x[2]}</span><span class="tag ${SS[x[4]]}">${x[4]}</span></div><p>📍 ${x[3]}</p><p>${x[5]}</p></div></div>`).join('');
+[sum,tl].forEach(e=>{e.classList.remove('pop');void e.offsetWidth;e.classList.add('pop')})}
+D.forEach((x,i)=>{const b=document.createElement('button');b.innerHTML=`${x.d}<small>週${x.w}</small>`;b.onclick=()=>show(i);tabs.appendChild(b)});show(0);
+document.getElementById('hs').innerHTML=H.map(h=>`<div class="card hotel"><span class="lab" style="background:${h[1]}">${h[0]}</span><h3>${h[2]}</h3><p>🔖 訂房編號 ${h[3]}</p><p>${h[4]}</p><div class="cost">💰 ${h[5]}</div><div>${h[6].map(l=>`<a class="lk" href="${l[1]}" target="_blank" rel="noopener">🔗 ${l[0]}</a>`).join('')}</div></div>`).join('');
+let st={};try{st=JSON.parse(localStorage.getItem('jp27')||'{}')}catch(e){}
+document.getElementById('td').innerHTML=TD.map((t,i)=>`<label><input type="checkbox" data-i="${i}" ${st[i]?'checked':''}><span>${t[1]}<small>⏰ ${t[0]}｜優先度 ${t[2]}｜${t[3]}</small></span></label>`).join('');
+document.getElementById('td').onchange=e=>{st[e.target.dataset.i]=e.target.checked;try{localStorage.setItem('jp27',JSON.stringify(st))}catch(x){}};
+const cd=document.getElementById('cd'),go=new Date('2027-01-17T07:55:00+08:00');
+function tick(){const s=go-Date.now();if(s<=0){cd.innerHTML='<div style="min-width:0;padding:2px 16px"><b style="font-size:18px">旅程進行中 ✈</b></div>';return}
+const d=Math.floor(s/864e5),h=Math.floor(s%864e5/36e5),m=Math.floor(s%36e5/6e4);
+cd.innerHTML=`<div><b>${d}</b><span>天</span></div><div><b>${h}</b><span>小時</span></div><div><b>${m}</b><span>分鐘</span></div>`}
+tick();setInterval(tick,3e4);
+</script></body></html>
